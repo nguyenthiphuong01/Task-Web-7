@@ -12,7 +12,7 @@
 
             $file_ext = explode('.', $file_name);
             $file_actualext = strtolower(end($file_ext));
-            $allowed = array('jpg', 'jpeg', 'png', 'gif', 'pdf', 'zip', 'txt', 'doc');
+            $allowed = array('jpg', 'jpeg', 'png', 'gif');
 
             if (in_array($file_actualext, $allowed)) {
                 if ($file_error === 0) {
